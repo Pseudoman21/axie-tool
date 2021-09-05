@@ -4,11 +4,22 @@ let deduc = document.getElementById("deduc");
 let deducCard = document.getElementById("deducCard");
 let nextRound = document.getElementById("nextRound");
 let nextRoundCard = document.getElementById("nextRoundCard");
+let resetAll = document.getElementById("resetAll");
 let cardCount = document.getElementById("cardCount");
 let energyCount = document.getElementById("energyCount");
 
 let currentEnergy = 3;
 let currentCard = 6;
+
+
+resetAll.addEventListener("click", ()=> {
+
+    let defaultCard = 6;
+    cardCount.innerHTML = defaultCard+"";
+    currentEnergy = 3;
+    energyCount.innerHTML = currentEnergy+"";
+})
+
 
 // energy
 add.addEventListener("click", ()=> {
@@ -16,7 +27,7 @@ add.addEventListener("click", ()=> {
     }
     else {
         energyCount.innerHTML = currentEnergy+1 +"";
-        currentEnergy =+ currentEnergy +1;
+        currentEnergy = currentEnergy +1;
     }
 })
 deduc.addEventListener("click", ()=> {
@@ -75,8 +86,9 @@ nextRoundCard.addEventListener("click", ()=> {
             cardCount.innerHTML = currentCard+"";
         }
         else{
-            currentCard =+ currentCard + 3;
+            currentCard = currentCard + 3;
             cardCount.innerHTML = currentCard+"";
         }
     }
 })
+
