@@ -1,0 +1,20 @@
+body,html {
+    height: 100%;
+    background-color: rgb(63, 63, 63)!important;
+}
+
+.top-max {
+    top: 25px!important;
+}
+
+.nav-item {
+    text-align: center!important;
+}
+
+.nav-link {
+    color: rgb(49, 49, 49)!important;
+}
+
+.nav-link .active{
+    color: rgb(26, 25, 25)!important;
+}

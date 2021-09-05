@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axie-tool (Cards and Energy Counter)</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container d-flex h-100">
+        <div class="row align-self-center w-100">
+            <div class="col-6 mx-auto top-max">
+                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="energy-tab" data-toggle="tab" href="#energy" role="tab" aria-controls="energy" aria-selected="true">Energy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="cards-tab" data-toggle="tab" href="#cards" role="tab" aria-controls="profile" aria-selected="false">Cards</a>
+                    </li>
+                </ul>
+                  <div class="tab-content jumbotron" id="myTabContent">
+                    <div class="tab-pane fade show active display-4 text-center justify-content-center mx-auto" id="energy" role="tabpanel" aria-labelledby="energy-tab">
+                        <div class="row justify-content-center">
+                            <div class="pull-left">
+                                <button type="button" id="deduc" class="btn btn-default btn-lg">
+                                    -
+                                 </button>
+                             </div>
+                             <div class="text-center" id="energyCount">
+                                3
+                             </div>
+                             <div class="pull-right">
+                                <button type="button" id="add" class="btn btn-default btn-lg">
+                                    +
+                                </button>
+                             </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="text-center" id="energyCount">
+                                <button type="button" id="nextRound" class="btn btn-secondary btn-lg">
+                                    Next Round
+                                 </button>
+                             </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade display-4 text-center" id="cards" role="tabpanel" aria-labelledby="cards-tab">
+                        <div class="tab-pane fade show active display-4 text-center justify-content-center mx-auto" id="energy" role="tabpanel" aria-labelledby="energy-tab">
+                            <div class="row justify-content-center">
+                                <div class="pull-left">
+                                    <button type="button" id="deducCard" class="btn btn-default btn-lg">
+                                        -
+                                     </button>
+                                 </div>
+                                 <div class="text-center" id="cardCount">
+                                    6
+                                 </div>
+                                 <div class="pull-right">
+                                    <button type="button" id="addCard" class="btn btn-default btn-lg">
+                                        +
+                                    </button>
+                                 </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="text-center" id="cardCount">
+                                    <button type="button" id="nextRoundCard" class="btn btn-secondary btn-lg">
+                                        Next Round
+                                     </button>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="custom.js"></script>
+</body>
+</html>
