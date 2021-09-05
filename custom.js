@@ -14,7 +14,7 @@ let currentCard = 6;
 
 resetAll.addEventListener("click", ()=> {
 
-    let defaultCard = 6;
+    currentCard = 6;
     cardCount.innerHTML = defaultCard+"";
     currentEnergy = 3;
     energyCount.innerHTML = currentEnergy+"";
